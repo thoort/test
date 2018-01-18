@@ -1,0 +1,32 @@
+function main(params) {
+    const htmlDoc = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <style>
+                body {
+                    margin: 3rem;
+                    color: #303030;
+                    background-color: #e5e5ff;
+                }
+            </style>
+        </head>
+        <body>
+    	    <h1>Login</h1>
+    	    <p>
+        	    <label for="input-username">Username</label>
+        	    <input id="input-username" type="text">
+        	</p>
+    	    <p>
+        	    <label for="input-password">Password</label>
+        	    <input id="input-password" type="password">
+        	</p>
+        	<button>Submit</button>
+        </body>
+        </html>`;
+
+	return {
+	    body: htmlDoc
+	};
+}
