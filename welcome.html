@@ -1,0 +1,25 @@
+function main(params) {
+    const username = params.user || 'World';
+    const htmlDoc = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <style>
+                body {
+                    margin: 3rem;
+                    color: #78e4a3;
+                    background-color: #505050;
+                }
+            </style>
+        </head>
+        <body>
+    	    <h1>Hello, ${username}</h1>
+            <p>Welcome to the world of composition.</p>
+        </body>
+        </html>`;
+
+	return {
+	    body: htmlDoc
+	};
+}
